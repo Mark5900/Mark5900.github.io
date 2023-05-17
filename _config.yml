@@ -5,7 +5,7 @@ avatar: /Me.jpg
 email: mark@boennelykke.com
 
 plugins:
-  - jekyll-include-cache
+- jekyll-include-cache
 
 paginate: 10
 
