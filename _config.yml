@@ -101,3 +101,18 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# Set which comment system to use
+comments:
+  # 'disqus' / 'giscus' / 'utterances' are available
+  provider: giscus
+
+giscus:
+  repo: "Mark5900/Mark5900.github.io"
+  repo-id: "R_kgDOJj4ADw"
+  category: "Comments"
+  category-id: "DIC_kwDOJj4AD84CWjjz"
+  mapping: "url"
+  reaction-enabled: "1"
+  theme: "preferred_color_scheme"
+  crossorigin: "anonymous"
