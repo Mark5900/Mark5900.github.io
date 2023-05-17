@@ -103,15 +103,16 @@ tag_archive:
   path: /tags/
 
 # Set which comment system to use
+repository: "Mark5900/Mark5900.github.io"
+
 comments:
   provider: giscus
-
-giscus:
-  repo: "Mark5900/Mark5900.github.io"
-  repo-id: "R_kgDOJj4ADw"
-  category: "Comments"
-  category-id: "DIC_kwDOJj4AD84CWjjz"
-  mapping: "url"
-  reaction-enabled: "1"
-  theme: "dark_dimmed"
-  crossorigin: "anonymous"
+  giscus:
+    repo: "Mark5900/Mark5900.github.io"
+    repo-id: "R_kgDOJj4ADw"
+    category: "Comments"
+    category-id: "DIC_kwDOJj4AD84CWjjz"
+    mapping: "url"
+    reaction-enabled: "1"
+    theme: "dark_dimmed"
+    crossorigin: "anonymous"
