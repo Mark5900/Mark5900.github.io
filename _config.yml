@@ -104,7 +104,6 @@ tag_archive:
 
 # Set which comment system to use
 comments:
-  # 'disqus' / 'giscus' / 'utterances' are available
   provider: giscus
 
 giscus:
@@ -114,5 +113,5 @@ giscus:
   category-id: "DIC_kwDOJj4AD84CWjjz"
   mapping: "url"
   reaction-enabled: "1"
-  theme: "preferred_color_scheme"
+  theme: "dark_dimmed"
   crossorigin: "anonymous"
