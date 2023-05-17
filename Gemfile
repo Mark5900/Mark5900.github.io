@@ -1,0 +1,2 @@
+plugins:
+  - jekyll-theme-hamilton
