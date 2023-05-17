@@ -1,3 +1,9 @@
+title: Mark Bønnelykke Rasmussen´s blog
+author: Mark Bønnelykke Rasmussen
+skin: Midnight
+avatar: /Me.jpg
+email: mark@boennelykke.com
+
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
@@ -6,3 +12,14 @@ plugins:
   - jekyll-paginate
 
 remote_theme: ngzhio/jekyll-theme-hamilton
+
+paginate: 10
+
+logo: logo.png
+social:
+  name: Mark Bønnelykke Rasmussen
+  links:
+    - https://www.linkedin.com/in/mark-bønnelykke-rasmussen-b95a0312b/
+    - https://github.com/Mark5900
+google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
+lang: da
