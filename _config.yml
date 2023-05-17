@@ -5,21 +5,16 @@ avatar: /Me.jpg
 email: mark@boennelykke.com
 
 plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate
-
-remote_theme: ngzhio/jekyll-theme-hamilton
+- jekyll-include-cache
 
 paginate: 10
 
-logo: logo.png
+logo: Me.jpg
 social:
   name: Mark Bønnelykke Rasmussen
   links:
     - https://www.linkedin.com/in/mark-bønnelykke-rasmussen-b95a0312b/
     - https://github.com/Mark5900
-google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
 lang: da
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
