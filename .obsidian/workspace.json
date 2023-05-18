@@ -1,0 +1,160 @@
+{
+  "main": {
+    "id": "a8aef186c4967d4e",
+    "type": "split",
+    "children": [
+      {
+        "id": "2ca24b58840bcdde",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "78dce657e98b5609",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Template/Post_ Quote.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0cb741352519c0d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "7dc4af0569c759e4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4d1c016fbaf95501",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "040abaa1cd8898f8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cd5dfb71cc07a4f0",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "574cd2e063cf88ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "9434a39bffc13682",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "630a218f5bd29ac2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Template/Post_ Quote.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "adff43458fff626c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Template/Post_ Quote.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0bd6a9727fb6a0b5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "14f8f718fb314c6e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Template/Post_ Quote.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "78dce657e98b5609",
+  "lastOpenFiles": [
+    "Template/Post_ Notice2.png",
+    "Template/Post_ Notice1.png",
+    "Template/2010-02-05-post-notice.md",
+    "_posts/2023-05-18-Titel.md",
+    "Template/1. Standard.md",
+    "_posts/Untitled 2.md",
+    "_posts/prefix-2023-05-18.md",
+    "_posts/Untitled 1.md",
+    "_posts/Untitled.md"
+  ]
+}
