@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "2ca24b58840bcdde",
+        "id": "7bc6617e1c2cbb62",
         "type": "tabs",
         "children": [
           {
-            "id": "78dce657e98b5609",
+            "id": "4b1a33e85bcfdc3b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Template/Post_ Quote.png"
+                "file": "_posts/2023-05-20-Hvordan denne her hjemmeside er sat op.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -62,6 +64,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "3f22c895a3252ec0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -83,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Template/Post_ Quote.png",
+                "file": "_posts/2023-05-20-Hvordan denne her hjemmeside er sat op.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Template/Post_ Quote.png",
+                "file": "_posts/2023-05-20-Hvordan denne her hjemmeside er sat op.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Template/Post_ Quote.png"
+                "file": "_posts/2023-05-20-Hvordan denne her hjemmeside er sat op.md"
               }
             }
           }
@@ -145,8 +155,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "78dce657e98b5609",
+  "active": "4d1c016fbaf95501",
   "lastOpenFiles": [
+    "_posts/[.md",
+    "_posts/2023-05-20-Hvordan denne her hjemmeside er sat op.md",
+    "Template/Post_ Quote.png",
     "Template/Post_ Notice2.png",
     "Template/Post_ Notice1.png",
     "Template/2010-02-05-post-notice.md",
@@ -154,7 +167,6 @@
     "Template/1. Standard.md",
     "_posts/Untitled 2.md",
     "_posts/prefix-2023-05-18.md",
-    "_posts/Untitled 1.md",
-    "_posts/Untitled.md"
+    "_posts/Untitled 1.md"
   ]
 }
