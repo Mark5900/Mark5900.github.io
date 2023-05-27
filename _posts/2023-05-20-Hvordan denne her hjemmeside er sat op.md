@@ -51,3 +51,51 @@ Med [GitHub Issues](https://github.com/features/issues) kan man holde styr på o
 
 
 ## Opsætning af ens side 
+
+### 1. DNS
+
+Hvis man ønsker at bruge sit eget domæne til ens side skal man lave lidt opsætning i sit domæne DNS, det en god idé at sætte det op som noget af det første da det kan godt tage noget tid for at synkronisere rundt.
+#### Opsætning af underdomæne
+For at opsætte et `www` eller brugerdefineret domæne såsom `www.example.com` eller `blog.example.com`.
+Skal du opsætte en CNAME fortegnelse som peger til `<user>.github.io`, hvor `<user>` er dit GitHub brugernavn.
+
+#### Opsætning af hoveddomæne
+Opsæt følgende adresser som A fortegnelser:
+```
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+Opsæt følgende Adresser som AAAA fortagnelser:
+```
+2606:50c0:8000::153
+2606:50c0:8001::153
+2606:50c0:8002::153
+2606:50c0:8003::153
+```
+
+En lille ekstra ting jeg gjorde var at opsætte en CNAME fortegnelse, hvor jeg peger `www` til `<user>.github.io`, hvor `<user>` er dit GitHub brugernavn. Så jeg nemlige sikker på om folk så skriver [boennelykke.com](https://boennelykke.com) eller [www.boennelykke.com](https://www.boennelykke.com) så ender de op på min side.
+
+#### Læs mere 
+* [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+
+### 2. Opsætning repo
+Jeg går ud fra man allerede ved lidt om GitHub og ved, hvordan man opretter et repo og en ny branch. Eller kan man læse om det her: 
+* [Create a repo](https://docs.github.com/en/github-ae@latest/get-started/quickstart/create-a-repo)
+* [Creating and deleting branches within your repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository)
+
+Hvis man ønsker at ens side skal lige min kan man bruge denne [Template](https://github.com/mmistakes/mm-github-pages-starter/generate) og følge beskrivelsen herunder:
+1. Opret nyt repo og kald det `<user>.github.io`, hvor `<user>` er dit GitHub brugernavn og sørg for at lave det public.
+	1. `<user>.github.io` er et reseveret navn til [GitHub Pages](https://pages.github.com) og det er meget vigtigt at du skriver dit brugernavn rigtigt ellers vil det ikke virke.
+2. I dit repo > Settings > Pages under Code and automation her styre man diverse indstillinger f.eks. hvilken branch der skal bruges til at bygge din side.
+	1. Hvis man vil bruge et sit eget domain skal man sætte dette under Custom domain, vent herefter på DNS tjekket går godt så du kan sætte flueben i Enforce HTTPS. Hvis tjekket ikke går godt så vend tilbage om en time og prøv igen, hvis du lige har lavet din DNS opsætning.
+3. Opret en ny brach
+	1. Denne nye branch skal du bruge til lave dine ændringer i og lave pull request fra til din main branch. Fordi hvis man arbejder i ens main brach så hver gang med pusher til main skal man vente lidt og pull de nye commits ned som GitHub Pages automatisk opretter.
+
+Hvis det ikke helt giver mening det jeg har skrevet eller man gerne vil prøve det lidt af først kan man lave følgende [skill kursus](https://github.com/skills/github-pages) fra GitHub igennem.
+
+### 3. Opsætning af side
+
+### 4. Opsætning af kommentare
+### 5. Opsætning af Obsidian
