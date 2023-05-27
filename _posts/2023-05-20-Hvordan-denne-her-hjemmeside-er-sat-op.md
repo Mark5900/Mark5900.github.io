@@ -100,7 +100,7 @@ Indstillinger for hele din side styres i `_config.yml` og man læse om alle muli
 
 ##### `__data/navigation.yml`
 Styre menu oppe til højre på din side
-![[Menu.png]]
+![](assets\images\2023-05-30\Menu.png)
 Filen skulle gerne indeholde følgende:
 ```yml
 main:
@@ -133,10 +133,42 @@ tags:
   - XXXX
 ---
 ```
-
+F.eks. dette post du læser nu kan du se [her](https://github.com/Mark5900/Mark5900.github.io/blob/main/_posts/2023-05-20-Hvordan-denne-her-hjemmeside-er-sat-op.md).
 
 #### `assets/images/`
+Mappen indeholder et demo billede til ens blog, enden upload et nyt billede med samme navn og format ellers skal du blot lige rette det i [`_config.yml`](#_configyml).
 
+#### `_config.yml`
+Indeholder de overordnet indstillinger for hele din side, den skal man lige løbe igennem og rette lidt til. Hvis man ønsker at tilføje mere funktionalitet/se hvad de forskellige indstillinger gør kan man læse mere [her](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
 
-### 4. Opsætning af kommentare
+### 4. Ekstra ting jeg har tilføjet
+
+#### Mappen: `_posts\assets\images\`
+Mappen bruges til at gemme billeder som jeg skal bruge i mine posts.
+
+#### Opsætning af kommentarfelt
+Det er relativt simpelt at opsætte kommentarfelt på ens posts man skal blot:
+1. **Vælge en kommentarudbyder**: Man kan vælge mellem [**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), [**utterances**](https://utteranc.es/), [**giscus**](https://giscus.app/), [**Staticman**](https://staticman.net/) eller andet. Jeg valgte at bruge [**giscus**](https://giscus.app/) da denne gør brug af [GitHub Discussions](https://docs.github.com/en/discussions).
+2. **Aktiver GitHub Discussions:** I dit repo tryk på settings >scroll ned og sæt flueben i Discussions
+3. **Opsæt ny kategori i  Discussions (valgfrit):** I dit repo tryk på Discussions > tryk på blyanten ved siden af Categories > New category > lav den opsætning du øsnker. Jeg har sat min op på denne her måde: ![[Discussions_Category.png]]
+4. **Installer giscus appen:** Installer appen via dette [link](https://github.com/apps/giscus) og sørg for at kun at give app'en adgang til dette ene repo.
+5. **Genere JavaScript med indstillinger:** Gå ind på [https://giscus.app](https://giscus.app) og lav den opsætning du ønsker. Det vil blive oprettet et JavaScript der indeholder de indstillinger som skal bruges til at lave resten af din opsætning.
+6. **Sæt følgende i `_config.yml`:**
+```yml
+# Set which comment system to use
+repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id              : # Shown during giscus setup at https://giscus.app
+    category_name        : # Full text name of the category
+    category_id          : # Shown during giscus setup at https://giscus.app
+    discussion_term      : # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : # '1' for enabled (default), '0' for disabled
+    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+```
+
+Læs mere [her](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#comments)
+
 ### 5. Opsætning af Obsidian
