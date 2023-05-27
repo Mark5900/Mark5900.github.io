@@ -96,6 +96,47 @@ Hvis man ønsker at ens side skal lige min kan man bruge denne [Template](https:
 Hvis det ikke helt giver mening det jeg har skrevet eller man gerne vil prøve det lidt af først kan man lave følgende [skill kursus](https://github.com/skills/github-pages) fra GitHub igennem.
 
 ### 3. Opsætning af side
+Indstillinger for hele din side styres i `_config.yml` og man læse om alle mulighederne [her](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
+
+##### `__data/navigation.yml`
+Styre menu oppe til højre på din side
+![[Menu.png]]
+Filen skulle gerne indeholde følgende:
+```yml
+main:
+  - title: "Posts"
+    url: /posts/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  - title: "About me"
+    url: /about/
+```
+Titel er visningsnavnet og url'en er permalink der hendviser til en side du kan se under mappen `_pages`.
+For at læse mere om navigation tryk [her](https://mmistakes.github.io/minimal-mistakes/docs/navigation/).
+#### `_pages/`
+I denne mappe finder man siderne der er nævnt under [`__data/navigation.yml`](#__datanavigationyml), det kan være en god idé at opdatere `about.md`.
+
+Man kan læse mere om pages [her](https://mmistakes.github.io/minimal-mistakes/docs/pages/).
+
+#### `_posts`
+I denne mappe skal man ligge alle sine posts til ens side, man kan læse mere om det [her](https://mmistakes.github.io/minimal-mistakes/docs/posts/). 
+
+Helt simpelt, hvis man vil lave et nyt post opretter man en fil med følgende navneformat `YEAR-MONTH-DAY-title.md` og i toppen af filen indsætter man følgende:
+```markdown
+---
+title: ""
+categories:
+  - Blog
+tags:
+  - XXXX
+---
+```
+
+
+#### `assets/images/`
+
 
 ### 4. Opsætning af kommentare
 ### 5. Opsætning af Obsidian
