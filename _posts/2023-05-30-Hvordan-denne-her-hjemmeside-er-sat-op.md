@@ -132,9 +132,10 @@ Indstillinger for hele din side styres i `_config.yml` og man læse om alle muli
 ##### `__data/navigation.yml`
 Styre menu oppe til højre på din side
 
-![](assets\images\2023-05-30\Menu.png)
+![](../assets/images/2023-05-30/Menu.png)
 
 Filen skulle gerne indeholde følgende:
+
 ```yml
 main:
   - title: "Posts"
@@ -146,6 +147,7 @@ main:
   - title: "About me"
     url: /about/
 ```
+
 Titel er visningsnavnet og url'en er permalink der hendviser til en side du kan se under mappen `_pages`.
 
 For at læse mere om navigation tryk [her](https://mmistakes.github.io/minimal-mistakes/docs/navigation/).
@@ -159,6 +161,7 @@ Man kan læse mere om pages [her](https://mmistakes.github.io/minimal-mistakes/d
 I denne mappe skal man ligge alle sine posts til ens side, man kan læse mere om det [her](https://mmistakes.github.io/minimal-mistakes/docs/posts/). 
 
 Helt simpelt, hvis man vil lave et nyt post opretter man en fil med følgende navneformat `YEAR-MONTH-DAY-title.md` og i toppen af filen indsætter man følgende:
+
 ```markdown
 ---
 title: ""
@@ -168,6 +171,7 @@ tags:
   - XXXX
 ---
 ```
+
 F.eks. dette post du læser nu kan du se [her](https://github.com/Mark5900/Mark5900.github.io/blob/main/_posts/2023-05-20-Hvordan-denne-her-hjemmeside-er-sat-op.md).
 
 #### `assets/images/`
@@ -189,6 +193,7 @@ Det er relativt simpelt at opsætte kommentarfelt på ens posts man skal blot:
 4. **Installer giscus appen:** Installer appen via dette [link](https://github.com/apps/giscus) og sørg for at kun at give app'en adgang til dette ene repo.
 5. **Genere JavaScript med indstillinger:** Gå ind på [https://giscus.app](https://giscus.app) og lav den opsætning du ønsker. Det vil blive oprettet et JavaScript der indeholder de indstillinger som skal bruges til at lave resten af din opsætning.
 6. **Tilføj følgende i `_config.yml`:**
+
 ```yml
 # Set which comment system to use
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -214,10 +219,11 @@ For at gøre min skriveoplevelse lettere har jeg valgt at opsætte en Obsidian v
 	1. I Obsidian tryk på Settings > Community plugins > Browse
 	2. Installer "LanguageTool Integration"
 	3. Sørg for at plugin'et er aktiveret under Community plugins
-	4. Under plugin'ets options har jeg sat følgende op![[Obsidian_LanguageTool.png]]
+	4. Under plugin'ets options har jeg sat følgende op![](../assets/images/2023-05-30/Obsidian_LanguageTool.png)
 4. **Installer Templater -** der findes allerede understøttelse til at bruge templates i Obsidian, dog mangler den funktionaliteten til at sætte overskriften af ens note/post så derfor valgte jeg at bruge Templater.
 	1. Opret en mappe med et sigende navn, min mappe hedder "Template"
-	2. Opret en fil med et sigende navn, min fil hedder "1. Standard" og indeholder følgende
+	2. Opret en fil med et sigende navn, min fil hedder "1. Standard" og indeholder følgende:
+   
 	```markdown
 	---
 	title: ""
@@ -229,8 +235,9 @@ For at gøre min skriveoplevelse lettere har jeg valgt at opsætte en Obsidian v
 	
 	<% tp.file.rename(tp.date.now() + "-Titel") %>
 	```
+
 	3.  I Obsidian tryk på Settings > Community plugins > Browse
 	4. Installer "Templater"
 	5. Sørg for at plugin'et er aktiveret under Community plugins
-	6. Under plugin'ets options har jeg sat følgende op![[Obsidian_Templater.png]]
+	6. Under plugin'ets options har jeg sat følgende op![](../assets/images/2023-05-30/Obsidian_Templater.png)
 	7. Nu kan man enten tryk `Alt` + `N` for at oprette en ny note med templaten "1. Standard" eller jeg kan oprette en ny fil og derefter indsætte min template via Templeter.
