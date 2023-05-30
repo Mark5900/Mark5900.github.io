@@ -40,7 +40,6 @@ tags:
 		- [`assets/images/`](#assetsimages)
 		- [`_config.yml`](#_configyml)
 	- [4. Ekstra ting jeg har tilføjet](#4-ekstra-ting-jeg-har-tilføjet)
-		- [Mappen: `_posts\assets\images\`](#mappen-_postsassetsimages)
 		- [Opsætning af kommentarfelt](#opsætning-af-kommentarfelt)
 	- [5. Opsætning af Obsidian](#5-opsætning-af-obsidian)
 
@@ -131,7 +130,9 @@ Indstillinger for hele din side styres i `_config.yml` og man læse om alle muli
 
 ##### `__data/navigation.yml`
 Styre menu oppe til højre på din side
-
+<figure>
+    <a href="/assets/images/2023-05-30/Menu.png"><img src="/assets/images/2023-05-30/Menu.png"></a>
+</figure>
 ![](../assets/images/2023-05-30/Menu.png)
 
 Filen skulle gerne indeholde følgende:
@@ -181,9 +182,6 @@ Mappen indeholder et demo billede til ens blog, enden upload et nyt billede med 
 Indeholder de overordnet indstillinger for hele din side, den skal man lige løbe igennem og rette lidt til. Hvis man ønsker at tilføje mere funktionalitet eller se, hvad de forskellige indstillinger gør kan man læse mere [her](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
 
 ### 4. Ekstra ting jeg har tilføjet
-
-#### Mappen: `_posts\assets\images\`
-Mappen bruges til at gemme billeder som jeg skal bruge i mine posts.
 
 #### Opsætning af kommentarfelt
 Det er relativt simpelt at opsætte kommentarfelt på ens posts man skal blot:
