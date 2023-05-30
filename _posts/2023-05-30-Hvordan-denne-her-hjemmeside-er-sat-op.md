@@ -34,7 +34,7 @@ tags:
 		- [Læs mere](#læs-mere)
 	- [2. Opsætning repo](#2-opsætning-repo)
 	- [3. Opsætning af siden](#3-opsætning-af-siden)
-			- [`__data/navigation.yml`](#__datanavigationyml)
+		- [`_data/navigation.yml`](#_datanavigationyml)
 		- [`_pages/`](#_pages)
 		- [`_posts`](#_posts)
 		- [`assets/images/`](#assetsimages)
@@ -128,15 +128,10 @@ Hvis det ikke helt giver mening det jeg har skrevet eller man gerne vil prøve d
 ### 3. Opsætning af siden
 Indstillinger for hele din side styres i `_config.yml` og man læse om alle mulighederne [her](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
 
-##### `__data/navigation.yml`
+##### `_data/navigation.yml`
 Styre menu oppe til højre på din side
-<figure>
-    <a href="/assets/images/2023-05-30/Menu.png"><img src="/assets/images/2023-05-30/Menu.png"></a>
-</figure>
 
-![image-center](/assets/images/2023-05-30/Menu.png){: .align-center}
-
-![image-center](/assets/images/2023-05-30/Menu.png)
+![Menu](/assets/images/2023-05-30/Menu.png)
 
 Filen skulle gerne indeholde følgende:
 
@@ -157,7 +152,7 @@ Titel er visningsnavnet og url'en er permalink der hendviser til en side du kan 
 For at læse mere om navigation tryk [her](https://mmistakes.github.io/minimal-mistakes/docs/navigation/).
 
 #### `_pages/`
-I denne mappe finder man siderne der er nævnt under [`__data/navigation.yml`](#__datanavigationyml), det kan være en god idé at opdatere `about.md`.
+I denne mappe finder man siderne der er nævnt under [`_data/navigation.yml`](#_datanavigationyml), det kan være en god idé at opdatere `about.md`.
 
 Man kan læse mere om pages [her](https://mmistakes.github.io/minimal-mistakes/docs/pages/).
 
@@ -190,7 +185,7 @@ Indeholder de overordnet indstillinger for hele din side, den skal man lige løb
 Det er relativt simpelt at opsætte kommentarfelt på ens posts man skal blot:
 1. **Vælge en kommentarudbyder**: Man kan vælge mellem [**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), [**utterances**](https://utteranc.es/), [**giscus**](https://giscus.app/), [**Staticman**](https://staticman.net/) eller andet. Jeg valgte at bruge [**giscus**](https://giscus.app/) da denne gør brug af [GitHub Discussions](https://docs.github.com/en/discussions).
 2. **Aktiver GitHub Discussions:** I dit repo tryk på settings >scroll ned og sæt flueben i Discussions
-3. **Opsæt ny kategori i  Discussions (valgfrit):** I dit repo tryk på Discussions > tryk på blyanten ved siden af Categories > New category > lav den opsætning du øsnker. Jeg har sat min op på denne her måde: ![[Discussions_Category.png]]
+3. **Opsæt ny kategori i  Discussions (valgfrit):** I dit repo tryk på Discussions > tryk på blyanten ved siden af Categories > New category > lav den opsætning du øsnker. Jeg har sat min op på denne her måde: ![Discussions category](/assets/images/2023-05-30/Discussions_Category.png)
 4. **Installer giscus appen:** Installer appen via dette [link](https://github.com/apps/giscus) og sørg for at kun at give app'en adgang til dette ene repo.
 5. **Genere JavaScript med indstillinger:** Gå ind på [https://giscus.app](https://giscus.app) og lav den opsætning du ønsker. Det vil blive oprettet et JavaScript der indeholder de indstillinger som skal bruges til at lave resten af din opsætning.
 6. **Tilføj følgende i `_config.yml`:**
@@ -220,7 +215,7 @@ For at gøre min skriveoplevelse lettere har jeg valgt at opsætte en Obsidian v
 	1. I Obsidian tryk på Settings > Community plugins > Browse
 	2. Installer "LanguageTool Integration"
 	3. Sørg for at plugin'et er aktiveret under Community plugins
-	4. Under plugin'ets options har jeg sat følgende op![](../assets/images/2023-05-30/Obsidian_LanguageTool.png)
+	4. Under plugin'ets options har jeg sat følgende op![Obsidian LanguageTool settings](/assets/images/2023-05-30/Obsidian_LanguageTool.png)
 4. **Installer Templater -** der findes allerede understøttelse til at bruge templates i Obsidian, dog mangler den funktionaliteten til at sætte overskriften af ens note/post så derfor valgte jeg at bruge Templater.
 	1. Opret en mappe med et sigende navn, min mappe hedder "Template"
 	2. Opret en fil med et sigende navn, min fil hedder "1. Standard" og indeholder følgende:
@@ -240,5 +235,5 @@ For at gøre min skriveoplevelse lettere har jeg valgt at opsætte en Obsidian v
 	3.  I Obsidian tryk på Settings > Community plugins > Browse
 	4. Installer "Templater"
 	5. Sørg for at plugin'et er aktiveret under Community plugins
-	6. Under plugin'ets options har jeg sat følgende op![](../assets/images/2023-05-30/Obsidian_Templater.png)
+	6. Under plugin'ets options har jeg sat følgende op![Obsidian Templater settings](/assets/images/2023-05-30/Obsidian_Templater.png)
 	7. Nu kan man enten tryk `Alt` + `N` for at oprette en ny note med templaten "1. Standard" eller jeg kan oprette en ny fil og derefter indsætte min template via Templeter.
