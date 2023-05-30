@@ -33,7 +33,7 @@ tags:
 		- [Opsætning af hoveddomæne](#opsætning-af-hoveddomæne)
 		- [Læs mere](#læs-mere)
 	- [2. Opsætning repo](#2-opsætning-repo)
-	- [3. Opsætning af side](#3-opsætning-af-side)
+	- [3. Opsætning af siden](#3-opsætning-af-siden)
 			- [`__data/navigation.yml`](#__datanavigationyml)
 		- [`_pages/`](#_pages)
 		- [`_posts`](#_posts)
@@ -125,7 +125,7 @@ Hvis man ønsker at ens side skal ligne min kan man bruge denne [Template](https
 
 Hvis det ikke helt giver mening det jeg har skrevet eller man gerne vil prøve det lidt af først kan man lave følgende [skill kursus](https://github.com/skills/github-pages) fra GitHub.
 
-### 3. Opsætning af side
+### 3. Opsætning af siden
 Indstillinger for hele din side styres i `_config.yml` og man læse om alle mulighederne [her](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
 
 ##### `__data/navigation.yml`
@@ -133,7 +133,10 @@ Styre menu oppe til højre på din side
 <figure>
     <a href="/assets/images/2023-05-30/Menu.png"><img src="/assets/images/2023-05-30/Menu.png"></a>
 </figure>
-![](../assets/images/2023-05-30/Menu.png)
+
+![image-center](/assets/images/2023-05-30/Menu.png){: .align-center}
+
+![image-center](/assets/images/2023-05-30/Menu.png)
 
 Filen skulle gerne indeholde følgende:
 
