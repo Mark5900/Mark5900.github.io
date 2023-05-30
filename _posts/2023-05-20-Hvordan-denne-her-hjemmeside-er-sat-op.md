@@ -5,7 +5,14 @@ categories:
 tags:
   - GitHub
   - GitHub Pages
-  - DNS
+  - GitHub Repository
+  - GitHub Discussions
+  - GitHub Issues
+  - Jekyll
+  - Obsidian
+  - Markdown
+  - Liquid
+  - Minimal Mistakes
 ---
 ## Indholdsfortegnelse
 - [Indholdsfortegnelse](#indholdsfortegnelse)
@@ -15,7 +22,6 @@ tags:
 	- [GitHub Pages](#github-pages)
 	- [GitHub Repository](#github-repository)
 	- [GitHub Discussions](#github-discussions)
-	- [GitHub Issues](#github-issues)
 	- [Jekyll](#jekyll)
 	- [Minimal Mistakes](#minimal-mistakes)
 	- [Obsidian](#obsidian)
@@ -45,7 +51,7 @@ Her kan du læse om opsætning af denne her blog side og hvordan du selv kan sæ
 ## Intro
 Da jeg sad og undersøgte, hvordan kunne jeg sætte en blog op ledte jeg oprindeligt efter en siden, hvor jeg kunne hoste en hjemmeside med mit domain og kunne bruge en form for template da jeg ikke er så stærk i og kode hjemmesidder 
 
-Der faldt jeg over at man kunne gøre brug af [GitHub Pages](https://pages.github.com) og jo mere jeg undersøgte dette fandt jeg ud af at det var lige det jeg ledte efter. Jeg kunne hoste min side helt gratis, [GitHub Pages](https://pages.github.com) understøtter at man kan bruge sit eget domain, det er muligt at slå et kommentar felt til på sine posts og jeg kan bruge eksterne temaer på min siden
+Der faldt jeg over at man kunne gøre brug af [GitHub Pages](https://pages.github.com) og jo mere jeg undersøgte dette fandt jeg ud af at det var lige det jeg ledte efter. Jeg kunne hoste min side helt gratis, [GitHub Pages](https://pages.github.com) understøtter at man kan bruge sit eget domain, det er muligt at slå et kommentar felt til på sine posts og jeg kan bruge eksterne temaer på min side.
 
 ## Beskrivelse af diverse teknologier og termer 
 Her beskriver jeg kort diverse teknologier/termer så man forhåbentlig ikke behøver at Google en masse for at forstå dette opslag.
@@ -58,9 +64,6 @@ I et [GitHub Repository](https://docs.github.com/en/get-started/quickstart/creat
 
 ### GitHub Discussions
 Man kan aktiver [GitHub Discussions](https://docs.github.com/en/discussions) i ens repo, det giver muligheden for at lave et forum til ens projekt.
-
-### GitHub Issues
-Med [GitHub Issues](https://github.com/features/issues) kan man holde styr på opgaver i ens projekt og snakke om diverse opgaver. Man vil for det meste koble ens Issues sammen med et [GitHub Project](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) som er en samling af alle ens opgaver, hvor man kan bruge visninger som Kanban og liste.
 
 ### Jekyll
 [Jekyll](https://jekyllrb.com) er motoren bag [GitHub Pages](https://pages.github.com) som som gør brug af [Markdown](#Markdown), [Liquid](Liquid), HTML & CSS til at generer statisk sider.
@@ -81,7 +84,7 @@ Med [GitHub Issues](https://github.com/features/issues) kan man holde styr på o
 ## Opsætning af ens side 
 
 ### 1. DNS
-Hvis man ønsker at bruge sit eget domæne til ens side skal man lave lidt opsætning i sit domæne DNS, det en god idé at sætte det op som noget af det første da det kan godt tage noget tid for at synkronisere rundt.
+Hvis man ønsker at bruge sit eget domæne til ens side skal man lave lidt opsætning i sit domænes DNS, det en god idé at sætte det op som noget af det første da det kan godt tage noget tid for at synkronisere rundt.
 
 #### Opsætning af underdomæne
 For at opsætte et `www` eller brugerdefineret domæne såsom `www.example.com` eller `blog.example.com`.
@@ -109,7 +112,7 @@ En lille ekstra ting jeg gjorde var at opsætte en CNAME fortegnelse, hvor jeg p
 * [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
 ### 2. Opsætning repo
-Jeg går ud fra man allerede ved lidt om GitHub og ved, hvordan man opretter et repo og en ny branch. Eller kan man læse om det her: 
+Jeg går ud fra man allerede ved lidt om GitHub og ved, hvordan man opretter et repo og en ny branch. Ellers kan man læse om det her: 
 * [Create a repo](https://docs.github.com/en/github-ae@latest/get-started/quickstart/create-a-repo)
 * [Creating and deleting branches within your repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository)
 
@@ -128,7 +131,9 @@ Indstillinger for hele din side styres i `_config.yml` og man læse om alle muli
 
 ##### `__data/navigation.yml`
 Styre menu oppe til højre på din side
+
 ![](assets\images\2023-05-30\Menu.png)
+
 Filen skulle gerne indeholde følgende:
 ```yml
 main:
@@ -169,7 +174,7 @@ F.eks. dette post du læser nu kan du se [her](https://github.com/Mark5900/Mark5
 Mappen indeholder et demo billede til ens blog, enden upload et nyt billede med samme navn og format ellers skal du blot lige rette det i [`_config.yml`](#_configyml).
 
 #### `_config.yml`
-Indeholder de overordnet indstillinger for hele din side, den skal man lige løbe igennem og rette lidt til. Hvis man ønsker at tilføje mere funktionalitet eller se hvad de forskellige indstillinger gør kan man læse mere [her](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+Indeholder de overordnet indstillinger for hele din side, den skal man lige løbe igennem og rette lidt til. Hvis man ønsker at tilføje mere funktionalitet eller se, hvad de forskellige indstillinger gør kan man læse mere [her](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
 
 ### 4. Ekstra ting jeg har tilføjet
 
@@ -204,7 +209,7 @@ Læs mere [her](https://mmistakes.github.io/minimal-mistakes/docs/configuration/
 ### 5. Opsætning af Obsidian
 For at gøre min skriveoplevelse lettere har jeg valgt at opsætte en Obsidian vault i mit projekt. 
 1. Dowload Obsidian ([her](https://obsidian.md))
-2. I Obsidian vælge at "Open folder as vault"´jeg har valgt at åbne roden af mit projekt men man kan sagtens også blot gøre det i mappen `_posts`
+2. I Obsidian vælge at "Open folder as vault" jeg har valgt at åbne roden af mit projekt men man kan sagtens også blot gøre det i mappen `_posts`
 3. **Installer stavekontrol** - Det er ikke den bedste stavekontrol men det er bedre end ingenting.  
 	1. I Obsidian tryk på Settings > Community plugins > Browse
 	2. Installer "LanguageTool Integration"
