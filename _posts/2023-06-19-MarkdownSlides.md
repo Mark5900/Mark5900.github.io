@@ -36,3 +36,6 @@ For at kunne bruge [Alex Naumanns (a-nau)](https://github.com/a-nau) løsning gj
    
    Der står på en af slidesne at du kan installere [Jekyll](https://jekyllrb.com/docs/installation/) på din pc, så du kan køre hjemmesiden lokalt på din maskine. Og i README.md under [Locally](https://github.com/Mark5900/MarkdownSlides/tree/gh-pages#locally) står der, hvordan du gør med docker. Dette kunne jeg dog ikke får til at fungere på min maskine og har ikke fundet en løsning på de, jeg plejer blot at lave en ny præsentation > merge pull request til `gh-pages` > tjek slidesne ud i min webbrowser.
 
+Håber du kunne bruge denne lille guide til noget, jeg ved godt det ikke er 100% den bedste løsning, den fungere dog fint for mig. Men der findes heldigvis mange forskellige løsninger som du kan google dig frem til.
+
+Hvis du har nogen spørgsmål er du velkommen til at skrive en kommentar på dette opslag eller kontakte mig via mail eller LinkeIn 😊
