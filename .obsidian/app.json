@@ -5,5 +5,14 @@
   "spellcheckLanguages": [
     "en-GB",
     "da"
+  ],
+  "spellcheckDictionary": [
+    "repo",
+    "public",
+    "main",
+    "brach",
+    "reveal.js",
+    "docker",
+    "u"
   ]
 }
