@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9450594bce0eb3a8",
+        "id": "8079a22e5bac2972",
         "type": "tabs",
         "children": [
           {
-            "id": "339cc91b5461670a",
+            "id": "655b0e53e709ed43",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,14 +18,30 @@
                 "source": false
               }
             }
+          }
+        ]
+      },
+      {
+        "id": "0c31ae28305d3ac1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "33084b56632ebfbc",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "assets/images/2023-07-06/New_self-hosted_runner.png"
+              }
+            }
           },
           {
-            "id": "a9b5baffc3355d95",
+            "id": "98f2245894c74bde",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-06-19-MarkdownSlides.md",
+                "file": "_posts/2023-07-06-Skub_kode_fra_GitHub_til_lokal_server.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-06-19-MarkdownSlides.md",
+                "file": "_posts/2023-07-06-Skub_kode_fra_GitHub_til_lokal_server.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-06-19-MarkdownSlides.md",
+                "file": "_posts/2023-07-06-Skub_kode_fra_GitHub_til_lokal_server.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-06-19-MarkdownSlides.md"
+                "file": "_posts/2023-07-06-Skub_kode_fra_GitHub_til_lokal_server.md"
               }
             }
           }
@@ -168,11 +184,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a9b5baffc3355d95",
+  "active": "98f2245894c74bde",
   "lastOpenFiles": [
-    "assets/images/2023-06-30/Screenshot 2023-07-06 073627.png",
-    "assets/images/2023-06-30/View_All_Branches.png.md",
     "_posts/2023-06-19-MarkdownSlides.md",
+    "assets/images/2023-07-06/New_self-hosted_runner.png",
+    "assets/images/2023-06-30/View_All_Branches.png.md",
+    "_posts/2023-07-06-Skub_kode_fra_GitHub_til_lokal_server.md",
+    "assets/images/2023-07-06",
+    "assets/images/2023-06-30/View_All_Branches.png",
     "_posts/2023-05-30-Hvordan-denne-her-hjemmeside-er-sat-op.md",
     "assets/images/2023-06-30",
     "assets/images/2023-06-19/View_All_Branches.png",
