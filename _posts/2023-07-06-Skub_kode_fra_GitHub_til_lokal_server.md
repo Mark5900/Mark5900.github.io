@@ -26,33 +26,33 @@ For at opsætte så man kan skubbe kode fra GitHub ned til en server skal man:
 2. **Opsæt en action:** 
 	1. I dit repo tryk på Actions > New workflow > Indsæt følgende i filen:
 	   ```yml
-name: PowerShell Deploy to Prod
+        name: PowerShell Deploy to Prod
 
-on:
-  # Hvis man push'er eller laver en pull request til sin branch main vil den kører actionen
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  # Denne betyder at man kan køre den manuelt
-  workflow_dispatch:
+        on:
+          # Hvis man push'er eller laver en pull request til sin branch main vil den kører actionen
+          push:
+            branches:
+              - main
+          pull_request:
+            branches:
+              - main
+          # Denne betyder at man kan køre den manuelt
+          workflow_dispatch:
 
-jobs:
-  build-and-deploy:
+        jobs:
+          build-and-deploy:
 
-    # Tag på server, god idé at finde noget mere unikt/tilføje mere end et tag.
-    # Hvis man har flere server deployer den bare til en tilfældig der har dette tag
-    runs-on: self-hosted
+            # Tag på server, god idé at finde noget mere unikt/tilføje mere end et tag.
+            # Hvis man har flere server deployer den bare til en tilfældig der har dette tag
+            runs-on: self-hosted
 
-    steps:
-    # Checkker ud repoet, nødvendig for at filerne kommer med over på serveren
-    - uses: actions/checkout@v2
+            steps:
+            # Checkker ud repoet, nødvendig for at filerne kommer med over på serveren
+            - uses: actions/checkout@v2
 
-    # Simpelt PowerShell der flytter alle filer til den ønskede mappe
-    - name: Deploy to Prod
-      run: |
-        Copy-Item -Path .\* -Destination "C:\PowerShell\MARA-Test"
-```
+            # Simpelt PowerShell der flytter alle filer til den ønskede mappe
+            - name: Deploy to Prod
+              run: |
+                Copy-Item -Path .\* -Destination "C:\PowerShell\MARA-Test"
+        ```
 	- [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
