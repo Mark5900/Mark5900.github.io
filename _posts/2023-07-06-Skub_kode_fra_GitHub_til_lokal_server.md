@@ -55,4 +55,7 @@ For at opsætte så man kan skubbe kode fra GitHub ned til en server skal man:
               run: |
                 Copy-Item -Path .\* -Destination "C:\PowerShell\MARA-Test"
         ```
-	- [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
+
+## Links
+
+- [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
