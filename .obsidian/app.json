@@ -2,10 +2,7 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "_posts",
   "spellcheck": true,
-  "spellcheckLanguages": [
-    "en-GB",
-    "da"
-  ],
+  "spellcheckLanguages": null,
   "spellcheckDictionary": [
     "repo",
     "public",
