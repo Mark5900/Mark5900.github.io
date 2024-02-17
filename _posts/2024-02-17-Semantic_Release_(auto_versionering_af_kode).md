@@ -26,12 +26,7 @@ Ofte kendt som noget ala. 1.23.122 altså:
 - 23 = Minor version
 - 122 = Patch version
 Semantic release har et mere praktisk vinkel på dette, da det ud fra dine prefix i commit beskeder finder ud af, hvilket version nummer den skal bumpe op:
-
-| Version nummer | Type | Eksempel commit prefix | Beskrivelse |
-| ---- | ---- | ---- | ---- |
-| 1 | Breaking Release | breaking: | Du har lavet en ændring så noget teer sig anderledes end før. Med andre ord, noget der virkede før virker nok ikke længere. |
-| 23 | Feature Release | feat: | Du har tilføjet ny feature/funktionalitet. |
-| 122 | Fix Release | fix: | Du har tilføjet en bug fix |
+![](/assets/images/2024-02-17/Tabel.png)
 ### Releases
 Ud fra dine commit beskeder laver den så en release i dit repo med beskrivelse. Så det er klar en øvelse at skrive gode commit beskrivelser.
 ![Eksempel på en release](/assets/images/2024-02-17/GitHub_Release.png)
