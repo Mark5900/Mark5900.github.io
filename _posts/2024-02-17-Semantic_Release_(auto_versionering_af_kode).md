@@ -95,6 +95,7 @@ I roden af dit project opretter du en fil, den understøtter flere forskellige f
 	}
 }
 ```
+
 Branches er, hvilket branches semantic release vil kører for. Der, hvor det mere interessante er diverse plugins som du kan finde her: <A href='https://semantic-release.gitbook.io/semantic-release/extending/plugins-list'>Plugins - semantic-release</A>
 Mit flow er følgenden når semantic release kører:
 1. **commit-analyzer**: Tjekker om der er nogen ændringer som gør skal lave et nyt release.
@@ -108,6 +109,7 @@ Mit flow er følgenden når semantic release kører:
 	- assets: Sørger for at MSI'erne også er vedhæftet på en release.
 ### GitHub Action
 Min GitHub Action ser således ud:
+
 ```yml
 name: Semantic Release and publish to PowerShell Gallery
 run-name: ${{ github.actor }} is automatically releasing 🚀
@@ -152,6 +154,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npx semantic-release
 ```
+
 Jeg forventer at ved, hvad en GitHub Action er og kan læse smat forstå denne action. Ellers vil jeg anbefale du læser GitHub's dokumentation (<A href='https://docs.github.com/en/actions'>GitHub Actions documentation - GitHub Docs</A>).
 
 På grund af PowerShell modulet bliver min action nød til at køre på Windows, ellers hvade jeg kørt det på linux.
