@@ -25,10 +25,11 @@ Ofte kendt som noget ala. 1.23.122 altså:
 - 1 = Major version
 - 23 = Minor version
 - 122 = Patch version
+
 Semantic release har et mere praktisk vinkel på dette, da det ud fra dine prefix i commit beskeder finder ud af, hvilket version nummer den skal bumpe op:
 ![](/assets/images/2024-02-17/Tabel.png)
 ### Releases
-Ud fra dine commit beskeder laver den så en release i dit repo med beskrivelse. Så det er klar en øvelse at skrive gode commit beskrivelser.
+Ud fra dine commit beskeder laver den så en release i dit repo med beskrivelse. Så det er klart en øvelse at skrive gode commit beskrivelser.
 ![Eksempel på en release](/assets/images/2024-02-17/GitHub_Release.png)
 ### Issues
 Vidste faktisk ikke den gjorde dette, før jeg kørte den første kørsel af min GitHub Action i mit repo.
@@ -97,6 +98,7 @@ I roden af dit project opretter du en fil, den understøtter flere forskellige f
 ```
 
 Branches er, hvilket branches semantic release vil kører for. Der, hvor det mere interessante er diverse plugins som du kan finde her: <A href='https://semantic-release.gitbook.io/semantic-release/extending/plugins-list'>Plugins - semantic-release</A>
+
 Mit flow er følgenden når semantic release kører:
 1. **commit-analyzer**: Tjekker om der er nogen ændringer som gør skal lave et nyt release.
 	- Jeg har så ændret lidt på `releaseRules` da jeg ikke var tilfreds med de standard prefixs man skal bruge på commits.
