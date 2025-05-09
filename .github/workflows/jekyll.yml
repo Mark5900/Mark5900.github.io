@@ -39,6 +39,7 @@ jobs:
         with:
           repository: Mark5900/Capa.PowerShell.Module
           path: capa-powershell-module
+          ref: Prerelease
 
       - name: Delete folder
         run: |
