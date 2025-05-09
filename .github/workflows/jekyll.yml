@@ -41,7 +41,10 @@ jobs:
           path: capa-powershell-module
 
       - name: Delete folder
-        run: rm PowerShell/Module
+        run: |
+          if [ -d "PowerShell/Module" ]; then
+            rm -rf PowerShell/Module
+          fi
 
       - name: Move files
         run: |
