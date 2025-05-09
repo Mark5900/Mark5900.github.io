@@ -33,6 +33,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Clone Capa.PowerShell.Module repository
+        uses: actions/checkout@v4
+        with:
+          repository: Mark5900/Capa.PowerShell.Module
+          path: capa-powershell-module
+
+      - name: Delete folder
+        run: rm PowerShell/Module
+
+      - name: Move files
+        run: |
+          mkdir PowerShell/Module/Capa.PowerShell.Module
+          cp capa-powershell-module/Documentation/Overview\ of\ all\ functions\ in\ modules.md PowerShell/Module/Capa.PowerShell.Module/Overview\ of\ all\ functions\ in\ modules.md
+
+      - name: Copy functions folder
+        run: |
+          mkdir PowerShell/Module/Capa.PowerShell.Module/Functions
+          cp -r capa-powershell-module/Documentation/Functions/* PowerShell/Module/Capa.PowerShell.Module/Functions
+
       - name: Setup Ruby
         # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
         uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
