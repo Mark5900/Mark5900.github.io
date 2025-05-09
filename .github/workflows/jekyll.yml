@@ -49,7 +49,7 @@ jobs:
       - name: Move files
         run: |
           mkdir -p PowerShell/Module/Capa.PowerShell.Module
-          cp capa-powershell-module/Documentation/Overview\ of\ all\ functions\ in\ modules.md PowerShell/Module/Capa.PowerShell.Module/Overview\ of\ all\ functions\ in\ modules.md
+          cp capa-powershell-module/Documentation/Overview\ of\ all\ functions\ in\ modules.md PowerShell/Module/Capa.PowerShell.Module.md
 
       - name: Copy functions folder
         run: |

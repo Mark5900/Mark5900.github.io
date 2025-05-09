@@ -4,4 +4,4 @@ permalink: /powershell/
 author_profile: true
 ---
 
-- [Capa.PowerShell.Module]()
+- [Capa.PowerShell.Module](https://boennelykke.com/powershell/Modules/Capa.PowerShell.Module/)
